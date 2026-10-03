@@ -1,0 +1,5 @@
+﻿[
+  { "id": 1, "equipe": "Sénégal", "prix": 5000, "tailles": ["S","M","L","XL"], "image": "senegal.jpg" },
+  { "id": 2, "equipe": "Liverpool", "prix": 6000, "tailles": ["M","L","XL"], "image": "liverpool.jpg" },
+  { "id": 3, "equipe": "Barcelone", "prix": 5500, "tailles": ["S","M","L"], "image": "barca.jpg" }
+]

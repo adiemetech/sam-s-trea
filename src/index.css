@@ -1,0 +1,25 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html, body { font-family: 'Inter', system-ui, -apple-system, sans-serif; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+.lenis.lenis-scrolling iframe { pointer-events: none; }
+@media (hover: hover) and (pointer: fine) { * { cursor: none !important; } }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: #0a0a0a; }
+::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #e63946, #f1c40f); border-radius: 10px; }
+@keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { @apply bg-white text-gray-900 transition-colors duration-500; }
+  .dark body { @apply bg-[#050505] text-white; }
+}
+@layer utilities {
+  .text-shadow-lg { text-shadow: 0 10px 30px rgba(0,0,0,0.4); }
+  .mask-fade-y { -webkit-mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent); mask-image: linear-gradient(to bottom, transparent, black 10%, black 90%, transparent); }
+}
+::selection { background: #e63946; color: white; }
+.dark ::selection { background: #f1c40f; color: #0a0a0a; }
